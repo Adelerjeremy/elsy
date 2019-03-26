@@ -1,33 +1,51 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-end;
+  text-align: center;
+  font-size: 30px;
+  height:480px;
+  box-shadow: 5px 0px 10px #505050;
 }
 
-.App-link {
-  color: #61dafb;
+button{
+  height: 50px;
+  margin-bottom: 2em;
+  background-color: #ebebeb;
+  box-shadow: 0px 1px 5px #6e6e6e;
+}
+button:hover{
+  box-shadow: 0px 1px 30px #636363;
+}
+.box i{
+  position: relative;
+  bottom:20%;
+  font-size: 140px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.drinkIcon {
+  position: relative;
+  top:-20%;
+  color:#3A85FF;
 }
+
+
+.box:nth-child(2n+1){
+  Background-color: #CCC;
+}
+
+ .heart i{ 
+  color: #eb0000;
+}
+.temperature i{
+  color: #ffa600;
+}
+
+.person, .temperature{
+  Background-color: #AAA;
+} 
