@@ -1,6 +1,5 @@
 import React from "react";
 
-
 class Water extends React.Component {
     state = {
         isClicked: false,
@@ -9,9 +8,9 @@ class Water extends React.Component {
         return(
             <div className="box col-12 col-md-6 col-lg-3 water">
 
-                <i style= {{}} className="material-icons drinkIcon">local_drink</i>
-                <p>{this.props.num}</p>
-                <button  class="btn " onClick={() => {
+                <i className="material-icons drinkIcon">local_drink</i>
+                <p>{this.props.onChangeFn}L</p>
+                <button  className="btn " onClick={() => {
                       this.setState({
                       isClicked: !this.state.isClicked,
                     });

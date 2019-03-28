@@ -13,14 +13,14 @@ class Heart extends React.Component {
             <div className="box col-12 col-md-6 col-lg-3 heart">
                 <i className="material-icons">favorite</i>
                 <p>{this.props.num} BPM</p> 
-                <button  class="btn" onClick={() => {
+                <button  className="btn" onClick={() => {
                       this.setState({
                       isClicked: !this.state.isClicked,
                     });
                   }}
                 style={{
                   backgroundColor: this.state.isClicked ? '#909090' : '#ebebeb'
-                }}><Slider min={0} max={120} onChange={(val) => this.props.onChangeFn(val)}/></button>
+                }}><Slider min={60} max={220} onChange={(val) => this.props.onChangeFn(val)}/></button>
 
             </div>
 

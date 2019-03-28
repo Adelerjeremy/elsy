@@ -12,7 +12,7 @@ class Temperature extends React.Component {
             <div className="box col-12 col-md-6 col-lg-3 temperature">
             <i className="material-icons">wb_sunny</i>
                 <p>{this.props.num}°C</p>
-                <button  class="btn" onClick={() => {
+                <button  className="btn" onClick={() => {
                       this.setState({
                       isClicked: !this.state.isClicked,
                     });
